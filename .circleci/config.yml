@@ -4,7 +4,7 @@ orbs:
 jobs:
   build_leaflet-oauth-support:
     docker:
-      - image: cimg/openjdk:11
+      - image: cimg/openjdk:11.0
     steps:
       - checkout
       - run:
