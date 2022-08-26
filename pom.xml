@@ -6,19 +6,16 @@
 
     <artifactId>leaflet-oauth-support</artifactId>
     <packaging>pom</packaging>
-    <version>0.0.1</version>
+    <version>1.0.0</version>
 
     <modules>
-        <module>api</module>
         <module>frontend-support</module>
-        <module>jwt-support</module>
-        <module>lags-client</module>
     </modules>
 
     <parent>
         <groupId>hu.psprog.leaflet</groupId>
         <artifactId>leaflet-stack-base-bom</artifactId>
-        <version>1.0-r2110.1</version>
+        <version>2.0-r2208.1</version>
     </parent>
 
     <properties>
