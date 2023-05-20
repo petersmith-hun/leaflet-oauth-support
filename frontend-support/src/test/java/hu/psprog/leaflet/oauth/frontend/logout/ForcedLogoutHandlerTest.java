@@ -16,7 +16,7 @@ import org.springframework.test.context.TestExecutionListeners;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.springframework.test.context.support.DirtiesContextTestExecutionListener;
 
-import javax.servlet.http.Cookie;
+import jakarta.servlet.http.Cookie;
 import java.util.Arrays;
 
 import static org.hamcrest.MatcherAssert.assertThat;
