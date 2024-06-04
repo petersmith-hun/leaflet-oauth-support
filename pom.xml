@@ -6,7 +6,7 @@
 
     <artifactId>leaflet-oauth-support</artifactId>
     <packaging>pom</packaging>
-    <version>1.1.0</version>
+    <version>1.2.0</version>
 
     <modules>
         <module>frontend-support</module>
@@ -15,13 +15,13 @@
     <parent>
         <groupId>hu.psprog.leaflet</groupId>
         <artifactId>leaflet-stack-base-bom</artifactId>
-        <version>3.0-r2305.1</version>
+        <version>4.0-r2405.1</version>
     </parent>
 
     <properties>
 
         <!-- Java environment version -->
-        <java.version>17</java.version>
+        <java.version>21</java.version>
 
         <!-- Compiler settings -->
         <maven.compiler.source>${java.version}</maven.compiler.source>
