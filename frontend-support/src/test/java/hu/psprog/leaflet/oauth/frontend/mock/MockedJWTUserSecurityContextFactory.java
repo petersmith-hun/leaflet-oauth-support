@@ -1,5 +1,6 @@
 package hu.psprog.leaflet.oauth.frontend.mock;
 
+import org.jspecify.annotations.NonNull;
 import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContext;
 import org.springframework.security.core.context.SecurityContextHolder;
@@ -27,7 +28,8 @@ public class MockedJWTUserSecurityContextFactory implements WithSecurityContextF
     private static final String REGISTRATION_ID = "leaflet";
 
     @Override
-    public SecurityContext createSecurityContext(WithMockedJWTUser withMockedJWTUser) {
+    @NonNull
+    public SecurityContext createSecurityContext(@NonNull WithMockedJWTUser withMockedJWTUser) {
 
         OAuth2User oAuth2User = prepareOAuthUser(withMockedJWTUser);
         Authentication authentication = new OAuth2AuthenticationToken(oAuth2User, Collections.emptyList(), REGISTRATION_ID);
